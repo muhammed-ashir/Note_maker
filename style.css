@@ -1,0 +1,39 @@
+.container1{
+    width: 400px;
+    height: 550px;
+    background-color: #5171A5;
+    /* border: 2px solid black; */
+    margin: 20px auto;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.note{
+    position: relative;
+    min-height: 150px;
+    width: 350px;
+    background-color: #C2F9BB;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+.note-title{
+    margin-top: 3px;
+    margin-left: 7px;
+}
+
+.note-content{
+    margin-left: 7px;
+}
+
+.option-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    background:none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
