@@ -30,6 +30,9 @@ addNote.addEventListener('submit',function(event){
 
     notes.appendChild(note);
 
+    // location.reload();
+    addNote.reset();
+
 })
 
 

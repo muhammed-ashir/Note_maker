@@ -1,12 +1,14 @@
 .container1{
     width: 400px;
-    height: 550px;
+    height: 500px;
     background-color: #5171A5;
-    /* border: 2px solid black; */
     margin: 20px auto;
     overflow: scroll;
     scrollbar-width: none;
 }
+.container1::-webkit-scrollbar {
+    display: none;
+  }
 
 .note{
     position: relative;
