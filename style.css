@@ -47,7 +47,7 @@
     right: 10px;
     z-index: 3;
     background-color: #BABF95;
-    display: inline-block;
+    display: none;
     border-radius: 15px;
     width: 190px;
     padding: 5px 5px 0px 5px;
@@ -73,7 +73,6 @@
     margin-bottom: 5px;
     margin-top: 7px;
     cursor: pointer;
-    color: #d11a2a;
 }
 .delete-note:active {
     position: relative;
