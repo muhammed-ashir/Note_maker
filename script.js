@@ -38,16 +38,16 @@ function showNotes(){
 
     n_Obj.forEach((item, index) => {
 
-        html += `<div class="note">
+        html += `<div class="note" style="background-color: ${item.color};">
                     <h2 class="note-title">${item.title}</h2>
                     <p class="note-content">
                         ${item.content}
                     </p>
                     <button class="option-button" id="menuButton" onclick="menuAction(${index})"><i class="fas fa-align-left"></i></button>
                     <div class="note-menu" id="${index}">
-                        <button class="color-option"></button>
-                        <button class="color-option"></button>
-                        <button class="color-option"></button>
+                        <button class="color-option" style="background-color: #C2F9BB;" onclick="setColor('#C2F9BB',${index})"></button>
+                        <button class="color-option" style="background-color: #87F5FB;" onclick="setColor('#87F5FB',${index})"></button>
+                        <button class="color-option" style="background-color: #FAF0CA;" onclick="setColor('#FAF0CA',${index})"></button>
                         <div class="delete-note">
                             <a href="" class="btn" onclick="deleteitem(${index})"><i class="fa fa-trash" style="color:#d11a2a;"></i></a>
                         </div>
@@ -92,3 +92,12 @@ function menuAction(index){
 }
 
 
+function setColor(color,index) {
+
+    let n_item = localStorage.getItem("notes");
+    let n_Obj = JSON.parse(n_item);
+    n_Obj[index].color = color;
+    localStorage.setItem("notes", JSON.stringify(n_Obj));
+    location.reload();
+
+}
