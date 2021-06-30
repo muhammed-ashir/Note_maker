@@ -73,7 +73,3 @@
     margin-top: 7px;
     cursor: pointer;
 }
-.delete-note:active {
-    position: relative;
-    bottom: 8px;
-}
