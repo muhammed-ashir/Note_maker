@@ -98,6 +98,6 @@ function setColor(color,index) {
     let n_Obj = JSON.parse(n_item);
     n_Obj[index].color = color;
     localStorage.setItem("notes", JSON.stringify(n_Obj));
-    location.reload();
+    showNotes();
 
 }
