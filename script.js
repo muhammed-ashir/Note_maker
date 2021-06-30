@@ -35,8 +35,9 @@ function showNotes(){
 
     let html = '';
     let notes = document.getElementById('notes');
+    let n_Obj1 = n_Obj.reverse();
 
-    n_Obj.forEach((item, index) => {
+    n_Obj1.forEach((item, index) => {
 
         html += `<div class="note" style="background-color: ${item.color};">
                     <h2 class="note-title">${item.title}</h2>
