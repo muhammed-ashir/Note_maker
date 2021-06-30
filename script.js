@@ -73,18 +73,18 @@ function menuAction(index){
     
     let i = String(index);
     let x = document.getElementById(i);
-    // let menuButton = document.getElementById("menuButton");
     if (x.style.display === "none") {
         x.style.display = "inline-block";
-        // menuButton.innerHTML='<i class="fas fa-times"></i>';
+        $("#"+i).siblings("button").html('<i class="fas fa-times"></i>');
       } else {
         x.style.display = "none";
-        // menuButton.innerHTML='<i class="fas fa-align-left"></i>';
+        $("#"+i).siblings("button").html('<i class="fas fa-align-left"></i>');
       }
       let menus = document.getElementsByClassName('note-menu');
       for (let i = 0; i < menus.length; i++) {
           if(menus[i].id != index){
             menus[i].style.display="none";
+            $(menus[i]).siblings("button").html('<i class="fas fa-align-left"></i>');
           }
         
     }
